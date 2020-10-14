@@ -6,7 +6,7 @@ Bing bong game base on C programing language:
     Left racket keys : w and s
     the game have three levels every level is faster than the previous.
     Games levels: Easy and medium and hard.
-    To adjust keyboard keys check BingBong_program.c as it the program
+    To adjust keyboard keys check BingBong_program.c as it is the program
     manger.
     Game start:
     1- Enter names of the players.
