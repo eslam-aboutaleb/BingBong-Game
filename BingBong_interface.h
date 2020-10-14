@@ -32,9 +32,14 @@
 
 #if CURRENT_OS == WINDOWS_USER
 #define SYS_DELAY(DelayMs)                     Sleep(DelayMs)
+
 #elif CURRENT_OS == LINUX_USER
-#define SYS_DELAY(DelayMs)                     delay(DelayMs)
-#endif
+    /* Add linux Libs and APIs */
+
+#else
+#error The current os is not defined
+
+#endif /* CURRENT_OS */
 
 /* ************************************************************************* */
 typedef unsigned char                          BingBongLvl_t;

@@ -16,7 +16,12 @@ void Screen_vGotoXY(u32 Copy_u32x,u32 Copy_u32y)
 	HANDLE consoleHandle = GetStdHandle(STD_OUTPUT_HANDLE);
 	/* set the cursor position using the console handle and the initialized coordinates */
 	SetConsoleCursorPosition(consoleHandle,coord);
-	#endif
+	#elif CURRENT_OS == LINUX_USER
+    /* Add linux Libs and APIs */
+    #else
+    #error The current os is not defined
+
+    #endif /* CURRENT_OS */
 }
 
 
@@ -29,7 +34,7 @@ void Screen_vErase(void)
         for(u8Index_2 = 0;u8Index_2 <= SCREEN_X_END_LIMIT; u8Index_2++)
         {
             Screen_vGotoXY(u8Index_2,u8Index);
-            printf(" ");
+            printf("%c",ERASE_SHAPE);
         }
     }
 }

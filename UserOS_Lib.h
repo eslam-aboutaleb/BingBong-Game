@@ -10,7 +10,7 @@
 #include <windows.h>
 
 #elif CURRENT_OS == LINUX_USER
-
+/* Add linux Libs and APIs */
 #else
 #error The current os is not defined
 
