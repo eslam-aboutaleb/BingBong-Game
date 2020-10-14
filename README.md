@@ -17,5 +17,5 @@ Bing bong game base on C programing language:
     Try to catch the ball with the racket if you missed it the other player
     will win a point.
  
-If the user's system is linux change the macros in UserOS_Lib.h the game is
+If the user's system is linux change the macros in UserOS_Lib.h, the game
 By default runs on windows.
