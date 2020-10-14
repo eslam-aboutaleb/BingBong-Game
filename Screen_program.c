@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <windows.h>
+#include "UserOS_Lib.h"
 #include "STD_TYPES.h"
 #include "Screen_interface.h"
 
@@ -7,6 +7,7 @@
 
 void Screen_vGotoXY(u32 Copy_u32x,u32 Copy_u32y)
 {
+    #if CURRENT_OS == WINDOWS_USER
     /* Initialize the coordinates of the screen */
 	COORD coord;
 	coord.X = Copy_u32x;
@@ -15,6 +16,7 @@ void Screen_vGotoXY(u32 Copy_u32x,u32 Copy_u32y)
 	HANDLE consoleHandle = GetStdHandle(STD_OUTPUT_HANDLE);
 	/* set the cursor position using the console handle and the initialized coordinates */
 	SetConsoleCursorPosition(consoleHandle,coord);
+	#endif
 }
 
 

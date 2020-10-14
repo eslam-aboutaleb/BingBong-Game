@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <windows.h>
 #include "STD_TYPES.h"
 #include "Screen_interface.h"
 #include "Racket_interface.h"

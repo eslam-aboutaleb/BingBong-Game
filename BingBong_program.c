@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <windows.h>
+#include "UserOS_Lib.h"
 #include "STD_TYPES.h"
 #include "Keyboard_interface.h"
 #include "Racket_interface.h"
@@ -166,7 +166,7 @@ void BingBong_vInitKeyboard(void)
 void BingBong_vSleep(void)
 {
 	/* Sleep is a windows API to slow down the loop*/
-	Sleep(u32Speed);
+	SYS_DELAY(u32Speed);
 }
 
 /* ************************************************************************* */

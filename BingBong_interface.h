@@ -28,6 +28,14 @@
 /* Welcome messages macros */
 #define WELCOME_MSG_COORD_X                    10
 #define WELCOME_MSG_COORD_Y                    1
+
+
+#if CURRENT_OS == WINDOWS_USER
+#define SYS_DELAY(DelayMs)                     Sleep(DelayMs)
+#elif CURRENT_OS == LINUX_USER
+#define SYS_DELAY(DelayMs)                     delay(DelayMs)
+#endif
+
 /* ************************************************************************* */
 typedef unsigned char                          BingBongLvl_t;
 /* ************************************************************************* */
