@@ -22,7 +22,7 @@
     Game start:
     1- Enter names of the players.
     2- Enter level of the game (if you chose invalid choice the game
-                                automatically start at easy level)
+                                automatically starts at easy level)
     3- Enjoy the game.
 
     Tips:

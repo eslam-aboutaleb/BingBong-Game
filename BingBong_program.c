@@ -166,7 +166,7 @@ void BingBong_vInitKeyboard(void)
 void BingBong_vSleep(void)
 {
 	/* Sleep is a windows API to slow down the loop*/
-	Sleep(BINGBONG_HARD_LVL_T_MS);
+	Sleep(u32Speed);
 }
 
 /* ************************************************************************* */
